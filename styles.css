@@ -1,13 +1,51 @@
 html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(90deg, rgba(37,36,59,1) 0%, rgba(33,110,41,1) 100%);
+    color: #fff;
 }
 
 .centered {
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.motivational {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.5;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: bounce 3s infinite ease-in-out;
+}
+
+.footer {
+    margin-top: 15px;
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
 }
